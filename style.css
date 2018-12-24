@@ -1,0 +1,156 @@
+/*
+        CSS INDEX
+1. Global
+2. Top Navigation Bar
+3. Header
+4. About
+*/
+
+/*
+=========================
+  1. GLOBAL
+=========================  
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*
+=========================
+  2. TOP NAVIGATION BAR
+=========================  
+*/
+
+.navbar{
+    background: #F97300;
+}
+.nav-link,
+.navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important; /* Add space */
+}
+
+.nav-link:hover{
+    background: #f4f4f4; 
+    border-radius: 5%;
+    color: #f97300;
+}
+.navbar-collapse{
+    justify-content: flex-end;  /*right aligns the navbar items*/
+}
+.navbar-toggler{
+    background: #fff !important; /* add color to toggler*/
+}
+
+/*
+=========================
+  3. HEADER
+=========================    
+*/
+
+header{
+    background-image: url('bg/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(2,2,2,0.7);
+}
+
+.description{
+    position: absolute;
+    top: 25%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1{
+    color: #F97300;
+}
+
+.description p{
+    width: 70%;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.description button{
+    border: 1px solid rgb(224,105,0);
+    background: rgb(224, 105, 0);
+    color: #fff;
+}
+
+.description button:hover{
+    background: rgb(255, 133,32);
+    border: 1px solid rgb(255, 133, 32);
+}
+
+/*
+=========================
+  4. ABOUT
+=========================    
+*/
+
+.about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.about h1{
+    color: #f97300;
+    margin: 2em;
+}
+
+.about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.about .desc{
+    padding: 2em;
+    border-left: 4px solid #f97300;
+}
+
+.about .desc p{
+    line-height: 2;
+    color: #888;
+}
+
+.about .desc h3{
+    color: #f97300;
+}
+
